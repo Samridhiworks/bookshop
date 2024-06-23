@@ -937,3 +937,36 @@ footer {
     font-size: 1.2rem;
   }
 }
+@media (min-width: 1920px) {
+  .banner {
+    padding: 80px; /* Increase padding for larger screens */
+  }
+
+  .txt {
+    font-size: 1.5rem; /* Adjust text size */
+  }
+
+  .swiper-slide {
+    width: 200px; /* Set a fixed width for slides */
+    margin: 20px; /* Increase margin between slides */
+  }
+
+  .table img {
+    max-width: 400px; /* Increase maximum width of the table image */
+  }
+} 
+@media (max-width: 1024px) {
+  .txt {
+    font-size: 1.2rem; /* Decrease text size for smaller screens */
+    max-width: 600px; /* Adjust maximum width for text */
+  }
+
+  .swiper-slide {
+    width: calc(50% - 20px); /* 50% width minus margin */
+    margin: 10px;
+  }
+
+  .table img {
+    max-width: 100%; /* Ensure table image fills its container */
+  }
+}
